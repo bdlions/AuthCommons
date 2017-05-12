@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package org.bdlions.packet;
+package org.bdlions.transport.packet;
 
 import com.auction.util.ACTION;
 import com.auction.util.REQUEST_TYPE;
@@ -17,4 +17,5 @@ public interface IPacketHeader {
     REQUEST_TYPE getRequestType();
     String getSessionId();
     String getPacketId();
+    boolean isBroken();
 }

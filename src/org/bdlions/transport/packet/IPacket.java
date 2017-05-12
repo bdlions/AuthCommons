@@ -3,9 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package org.bdlions.packet;
+package org.bdlions.transport.packet;
 
 import java.net.InetAddress;
+import org.bdlions.transport.sender.IClientPacketSender;
+import org.bdlions.transport.sender.IRelayPacketSender;
 
 /**
  *
@@ -16,4 +18,11 @@ public interface IPacket {
     String getPacketBody();
     InetAddress getRemoteIP();
     int getRemotePort();
+    long getSentTime();
+    int getSentCount();
+    int setSentCount(int count);
+    IClientPacketSender getClientPacketSender();
+    IRelayPacketSender getRelayPacketSender();
+    int getAction();
+    int getServerPacketId();
 }
