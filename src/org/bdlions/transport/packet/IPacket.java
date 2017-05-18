@@ -6,6 +6,7 @@
 package org.bdlions.transport.packet;
 
 import java.net.InetAddress;
+import org.bdlions.session.ISession;
 import org.bdlions.transport.sender.IClientPacketSender;
 import org.bdlions.transport.sender.IRelayPacketSender;
 
@@ -23,6 +24,7 @@ public interface IPacket {
     int setSentCount(int count);
     IClientPacketSender getClientPacketSender();
     IRelayPacketSender getRelayPacketSender();
-    int getAction();
-    int getServerPacketId();
+    void setResponseData(byte[] data);
+    byte[] getResponseData();
+    byte[] getPacketHeaderData();
 }

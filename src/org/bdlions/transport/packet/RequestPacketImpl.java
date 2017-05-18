@@ -20,6 +20,7 @@ public class RequestPacketImpl implements IPacket {
     private String packetBody;
     private String remoteAddress;
     private int remotePort;
+    private byte[] data;
 
     public RequestPacketImpl(IPacketHeader packetHeader, String packetBody, String remoteAddress, int remotePort) {
         this.remoteAddress = remoteAddress;
@@ -79,13 +80,21 @@ public class RequestPacketImpl implements IPacket {
     }
 
     @Override
-    public int getAction() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void setResponseData(byte[] data) {
+        this.data = data;
     }
 
     @Override
-    public int getServerPacketId() {
+    public byte[] getResponseData() {
+        return data;
+    }
+
+    @Override
+    public byte[] getPacketHeaderData() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+    
+    
+
 
 }
