@@ -16,6 +16,8 @@ public enum ACTION {
     SIGN_IN(1001, REQUEST_TYPE.AUTH),
     @SerializedName("1002")
     SIGN_OUT(1002, REQUEST_TYPE.AUTH),
+    @SerializedName("1004")
+    SIGN_UP(1004, REQUEST_TYPE.AUTH),
     @SerializedName("1003")
     FETCH_PRODUCT_LIST(1003, REQUEST_TYPE.REQUEST),
     @SerializedName("2001")
@@ -44,6 +46,14 @@ public enum ACTION {
     FETCH_USER_INFO(3002, REQUEST_TYPE.REQUEST),
     @SerializedName("3003")
     FETCH_ACCOUNT_SETTING_FA(3003, REQUEST_TYPE.REQUEST),
+    @SerializedName("4001")
+    UPDATE_USER_INFO(4001, REQUEST_TYPE.UPDATE),
+    @SerializedName("4002")
+    UPDATE_USER_PROFILE_PICTURE(4002, REQUEST_TYPE.UPDATE),
+    @SerializedName("4003")
+    UPDATE_USER_DOCUMENT(4003, REQUEST_TYPE.UPDATE),
+    @SerializedName("5001")
+    ADD_PRODUCT(5001, REQUEST_TYPE.UPDATE),
     ;
 
     private int id;
