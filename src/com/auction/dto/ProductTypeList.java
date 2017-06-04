@@ -2,23 +2,24 @@ package com.auction.dto;
 
 import com.auction.dto.response.ClientResponse;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
  * @author nazmul hasan
  */
 public class ProductTypeList extends ClientResponse{
-    private ArrayList<Common> productTypes;
+    private List<ProductType> productTypes;
     public ProductTypeList()
     {
         this.productTypes = new ArrayList<>();
     }
 
-    public ArrayList<Common> getProductTypes() {
+    public List<ProductType> getProductTypes() {
         return productTypes;
     }
 
-    public void setProductTypes(ArrayList<Common> productTypes) {
+    public void setProductTypes(List<ProductType> productTypes) {
         this.productTypes = productTypes;
     }
     

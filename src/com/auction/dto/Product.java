@@ -13,11 +13,13 @@ public class Product extends ClientResponse implements Serializable
 {
     private int id;
 //    private String productId;
+    private String referenceId;
     private User user;
     private String title;
     private String description;
     private String firstName;
     private String lastName;
+    private String companyName;
     private String phone;
     private String img;
     private Image[] images;
@@ -63,6 +65,15 @@ public class Product extends ClientResponse implements Serializable
 //        this.productId = productId;
 //    }
 
+    public String getReferenceId() {
+        return referenceId;
+    }
+
+    public void setReferenceId(String referenceId) {
+        this.referenceId = referenceId;
+    }
+    
+
     public String getTitle() {
         return title;
     }
@@ -95,6 +106,14 @@ public class Product extends ClientResponse implements Serializable
         this.lastName = lastName;
     }
 
+    public String getCompanyName() {
+        return companyName;
+    }
+
+    public void setCompanyName(String companyName) {
+        this.companyName = companyName;
+    }
+    
     public String getPhone() {
         return phone;
     }

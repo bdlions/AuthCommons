@@ -2,23 +2,24 @@ package com.auction.dto;
 
 import com.auction.dto.response.ClientResponse;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
  * @author nazmul hasan
  */
 public class OccupationList extends ClientResponse{
-    private ArrayList<Common> occupations;
+    private List<Occupation> occupations;
     public OccupationList()
     {
         this.occupations = new ArrayList<>();
     }
 
-    public ArrayList<Common> getOccupations() {
+    public List<Occupation> getOccupations() {
         return occupations;
     }
 
-    public void setOccupations(ArrayList<Common> occupations) {
+    public void setOccupations(List<Occupation> occupations) {
         this.occupations = occupations;
     }
     

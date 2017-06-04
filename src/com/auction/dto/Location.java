@@ -5,7 +5,7 @@ package com.auction.dto;
  * @author nazmul hasan
  */
 public class Location {
-    private String locationId;
+    private int id;
     private String locationType;
     private String searchString;
     private String postCode;
@@ -14,12 +14,12 @@ public class Location {
     
     }
 
-    public String getLocationId() {
-        return locationId;
+    public int getId() {
+        return id;
     }
 
-    public void setLocationId(String locationId) {
-        this.locationId = locationId;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getLocationType() {
