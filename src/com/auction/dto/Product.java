@@ -3,6 +3,7 @@ package com.auction.dto;
 import com.auction.dto.response.ClientResponse;
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -27,7 +28,7 @@ public class Product extends ClientResponse implements Serializable
     private ProductType productType;
     private ProductSize productSize;
     private ProductCategory productCategory;
-    private Set<Amenity> amenities;
+    private List<Amenity> amenities;
     private Smoking smoking;
     private Gender gender;
     private Occupation occupation;
@@ -162,14 +163,16 @@ public class Product extends ClientResponse implements Serializable
         this.productCategory = productCategory;
     }
 
-    public Set<Amenity> getAmenities() {
+    public List<Amenity> getAmenities() {
         return amenities;
     }
 
-    public void setAmenities(Set<Amenity> amenities) {
+    public void setAmenities(List<Amenity> amenities) {
         this.amenities = amenities;
     }
 
+    
+    
     public Smoking getSmoking() {
         return smoking;
     }

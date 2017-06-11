@@ -5,19 +5,20 @@ package com.auction.dto;
  * @author nazmul hasan
  */
 public class Currency {
-    private String id;
+    private int id;
     private String title;
+    //this will not be added in database
     private CurrencyUnit currencyUnit;
     public Currency()
     {
         currencyUnit = new CurrencyUnit();
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 

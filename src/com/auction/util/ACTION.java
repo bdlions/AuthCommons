@@ -66,6 +66,8 @@ public enum ACTION {
     UPDATE_USER_DOCUMENT(4003, REQUEST_TYPE.UPDATE),
     @SerializedName("5001")
     ADD_PRODUCT(5001, REQUEST_TYPE.UPDATE),
+    @SerializedName("5002")
+    ADD_PRODUCT_BID(5002, REQUEST_TYPE.UPDATE),
     ;
 
     private int id;

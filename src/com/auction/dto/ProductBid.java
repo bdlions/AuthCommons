@@ -4,18 +4,19 @@ package com.auction.dto;
  *
  * @author nazmul hasan
  */
-public class Bid {
+public class ProductBid {
     private int id;
-    private String bidId;
+    private String referenceId;
     private User user;
     private Product product;
     private long createdOn;
-    private double bidAmount;
-    private Currency bidAmountUnit;
+    private double price;
+    private Currency currency;
+    private CurrencyUnit currencyUnit;
     
     //this will not be added into database. 
     private String bidTime;
-    public Bid()
+    public ProductBid()
     {
         this.user = new User();
         this.product = new Product();
@@ -29,12 +30,12 @@ public class Bid {
         this.id = id;
     }
 
-    public String getBidId() {
-        return bidId;
+    public String getReferenceId() {
+        return referenceId;
     }
 
-    public void setBidId(String bidId) {
-        this.bidId = bidId;
+    public void setReferenceId(String referenceId) {
+        this.referenceId = referenceId;
     }
 
     public User getUser() {
@@ -61,20 +62,28 @@ public class Bid {
         this.createdOn = createdOn;
     }
 
-    public double getBidAmount() {
-        return bidAmount;
+    public double getPrice() {
+        return price;
     }
 
-    public void setBidAmount(double bidAmount) {
-        this.bidAmount = bidAmount;
+    public void setPrice(double price) {
+        this.price = price;
+    }
+    
+    public Currency getCurrency() {
+        return currency;
     }
 
-    public Currency getBidAmountUnit() {
-        return bidAmountUnit;
+    public void setCurrency(Currency currency) {
+        this.currency = currency;
     }
 
-    public void setBidAmountUnit(Currency bidAmountUnit) {
-        this.bidAmountUnit = bidAmountUnit;
+    public CurrencyUnit getCurrencyUnit() {
+        return currencyUnit;
+    }
+
+    public void setCurrencyUnit(CurrencyUnit currencyUnit) {
+        this.currencyUnit = currencyUnit;
     }
 
     public String getBidTime() {

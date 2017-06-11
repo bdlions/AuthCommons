@@ -5,6 +5,9 @@
  */
 package org.bdlions.util;
 
+import java.math.BigInteger;
+import java.security.SecureRandom;
+
 /**
  *
  * @author alamgir
@@ -15,5 +18,11 @@ public class StringUtils {
             return true;
         }
         return false;
+    }
+    
+    public static String getRandomString()
+    {
+        SecureRandom random = new SecureRandom();
+        return new BigInteger(130, random).toString(32);
     }
 }
