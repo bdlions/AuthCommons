@@ -11,7 +11,7 @@ import java.util.Set;
 public class User extends ClientResponse implements java.io.Serializable{
     private int id;
     private String userName;
-    private String password;
+    private String password = "";
     private String firstName;
     private String lastName;
     private String email;
@@ -25,6 +25,7 @@ public class User extends ClientResponse implements java.io.Serializable{
     private long modifiedOn;
     private AccountStatus accountStatus;
     private Set<Role> roles;
+    private String fbCode = "";
 
     public int getId() {
         return id;
@@ -152,5 +153,13 @@ public class User extends ClientResponse implements java.io.Serializable{
 
     public void setAccountStatus(AccountStatus accountStatus) {
         this.accountStatus = accountStatus;
+    }
+
+    public String getFbCode() {
+        return fbCode;
+    }
+
+    public void setFbCode(String fbCode) {
+        this.fbCode = fbCode;
     }
 }

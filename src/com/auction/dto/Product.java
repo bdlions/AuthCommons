@@ -46,8 +46,8 @@ public class Product extends ClientResponse implements Serializable
     private boolean isDefaultBid;
     private double adBid;
     private Currency adBidUnit;
-    
 
+    
     
 
     public int getId() {
