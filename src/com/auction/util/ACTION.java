@@ -21,6 +21,8 @@ public enum ACTION {
     @SerializedName("1003")
     FETCH_PRODUCT_LIST(1003, REQUEST_TYPE.REQUEST),
     
+    @SerializedName("2023")
+    FETCH_USER_LIST(2023, REQUEST_TYPE.REQUEST),
     @SerializedName("2017")
     FETCH_MY_PRODUCT_LIST(2017, REQUEST_TYPE.REQUEST),
     @SerializedName("2021")
