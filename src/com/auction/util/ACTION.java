@@ -23,6 +23,8 @@ public enum ACTION {
     
     @SerializedName("2023")
     FETCH_USER_LIST(2023, REQUEST_TYPE.REQUEST),
+    @SerializedName("2025")
+    FETCH_MEMBER_ROLES(2025, REQUEST_TYPE.REQUEST),
     @SerializedName("2017")
     FETCH_MY_PRODUCT_LIST(2017, REQUEST_TYPE.REQUEST),
     @SerializedName("2021")
@@ -39,6 +41,8 @@ public enum ACTION {
     FETCH_PRODUCT_SIZE_LIST(2012, REQUEST_TYPE.REQUEST),
     @SerializedName("2013")
     FETCH_PRODUCT_CATEGORY_LIST(2013, REQUEST_TYPE.REQUEST),
+    @SerializedName("2024")
+    FETCH_PRODUCT_AMENITY_LIST(2024, REQUEST_TYPE.REQUEST),
     @SerializedName("2014")
     FETCH_STAY_LIST(2014, REQUEST_TYPE.REQUEST),
     @SerializedName("2015")

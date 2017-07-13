@@ -7,6 +7,8 @@ package com.auction.dto;
 public class Amenity {
     private int id;
     private String title;
+    //this will not be added into database
+    private String status;
 
     public int getId() {
         return id;
@@ -22,6 +24,14 @@ public class Amenity {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
     
 }
