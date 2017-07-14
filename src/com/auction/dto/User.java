@@ -24,8 +24,11 @@ public class User extends ClientResponse implements java.io.Serializable{
     private long createdOn;
     private long modifiedOn;
     private AccountStatus accountStatus;
+    //this field is used may be in session
     private Set<Role> roles;
     private String fbCode = "";
+    //user role list to be displayed at user profile
+    private List<Role> roleList;
 
     public int getId() {
         return id;
@@ -162,4 +165,13 @@ public class User extends ClientResponse implements java.io.Serializable{
     public void setFbCode(String fbCode) {
         this.fbCode = fbCode;
     }
+
+    public List<Role> getRoleList() {
+        return roleList;
+    }
+
+    public void setRoleList(List<Role> roleList) {
+        this.roleList = roleList;
+    }
+    
 }
