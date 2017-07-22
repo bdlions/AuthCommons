@@ -24,11 +24,13 @@ public class Product extends ClientResponse implements Serializable
     private String phone;
     private String img;
     private Image[] images;
+    private String availableFrom;
     private Location location;
     private ProductType productType;
     private ProductSize productSize;
     private ProductCategory productCategory;
     private List<Amenity> amenities;
+    private List<Availability> availabilities;
     private Smoking smoking;
     private Gender gender;
     private Occupation occupation;
@@ -48,7 +50,8 @@ public class Product extends ClientResponse implements Serializable
     private Currency adBidUnit;
 
     
-    
+    //outside database
+    private int totalBids;
 
     public int getId() {
         return id;
@@ -131,6 +134,14 @@ public class Product extends ClientResponse implements Serializable
         this.images = images;
     }
 
+    public String getAvailableFrom() {
+        return availableFrom;
+    }
+
+    public void setAvailableFrom(String availableFrom) {
+        this.availableFrom = availableFrom;
+    }
+    
     public Location getLocation() {
         return location;
     }
@@ -171,8 +182,14 @@ public class Product extends ClientResponse implements Serializable
         this.amenities = amenities;
     }
 
-    
-    
+    public List<Availability> getAvailabilities() {
+        return availabilities;
+    }
+
+    public void setAvailabilities(List<Availability> availabilities) {
+        this.availabilities = availabilities;
+    }
+
     public Smoking getSmoking() {
         return smoking;
     }
@@ -324,6 +341,12 @@ public class Product extends ClientResponse implements Serializable
     public void setImg(String img) {
         this.img = img;
     }
-    
-    
+
+    public int getTotalBids() {
+        return totalBids;
+    }
+
+    public void setTotalBids(int totalBids) {
+        this.totalBids = totalBids;
+    }
 }
