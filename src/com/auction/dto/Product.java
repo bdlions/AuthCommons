@@ -52,6 +52,8 @@ public class Product extends ClientResponse implements Serializable
     
     //outside database
     private int totalBids;
+    //time of closing products
+    private long time;
 
     public int getId() {
         return id;
@@ -349,4 +351,12 @@ public class Product extends ClientResponse implements Serializable
     public void setTotalBids(int totalBids) {
         this.totalBids = totalBids;
     }
+
+    public long getTime() {
+        return time;
+    }
+
+    public void setTime(long time) {
+        this.time = time;
+    }    
 }
