@@ -25,6 +25,11 @@ public class Product extends ClientResponse implements Serializable
     private String img;
     private Image[] images;
     private String availableFrom;
+    private String availableTo;
+    private String bidStartDate;
+    private String bidStartTime;
+    private String bidEndDate;
+    private String bidEndTime;
     private Location location;
     private ProductType productType;
     private ProductSize productSize;
@@ -142,6 +147,46 @@ public class Product extends ClientResponse implements Serializable
 
     public void setAvailableFrom(String availableFrom) {
         this.availableFrom = availableFrom;
+    }
+
+    public String getAvailableTo() {
+        return availableTo;
+    }
+
+    public void setAvailableTo(String availableTo) {
+        this.availableTo = availableTo;
+    }
+
+    public String getBidStartDate() {
+        return bidStartDate;
+    }
+
+    public void setBidStartDate(String bidStartDate) {
+        this.bidStartDate = bidStartDate;
+    }
+
+    public String getBidStartTime() {
+        return bidStartTime;
+    }
+
+    public void setBidStartTime(String bidStartTime) {
+        this.bidStartTime = bidStartTime;
+    }
+
+    public String getBidEndDate() {
+        return bidEndDate;
+    }
+
+    public void setBidEndDate(String bidEndDate) {
+        this.bidEndDate = bidEndDate;
+    }
+
+    public String getBidEndTime() {
+        return bidEndTime;
+    }
+
+    public void setBidEndTime(String bidEndTime) {
+        this.bidEndTime = bidEndTime;
     }
     
     public Location getLocation() {
