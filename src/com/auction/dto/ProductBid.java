@@ -10,6 +10,7 @@ public class ProductBid {
     private User user;
     private Product product;
     private long createdOn;
+    private String createdTime;
     private double price;
     private Currency currency;
     private CurrencyUnit currencyUnit;
@@ -94,6 +95,11 @@ public class ProductBid {
         this.bidTime = bidTime;
     }
 
-    
-    
+    public String getCreatedTime() {
+        return createdTime;
+    }
+
+    public void setCreatedTime(String createdTime) {
+        this.createdTime = createdTime;
+    }    
 }

@@ -24,8 +24,12 @@ public class Product extends ClientResponse implements Serializable
     private String phone;
     private String img;
     private Image[] images;
+    private long unixAvailableFrom;
+    private long unixAvailableTo;
     private String availableFrom;
     private String availableTo;
+    private long unixBidStart;
+    private long unixBidEnd;
     private String bidStartDate;
     private String bidStartTime;
     private String bidEndDate;
@@ -403,5 +407,37 @@ public class Product extends ClientResponse implements Serializable
 
     public void setTime(long time) {
         this.time = time;
-    }    
+    }  
+
+    public long getUnixAvailableFrom() {
+        return unixAvailableFrom;
+    }
+
+    public void setUnixAvailableFrom(long unixAvailableFrom) {
+        this.unixAvailableFrom = unixAvailableFrom;
+    }
+
+    public long getUnixAvailableTo() {
+        return unixAvailableTo;
+    }
+
+    public void setUnixAvailableTo(long unixAvailableTo) {
+        this.unixAvailableTo = unixAvailableTo;
+    }
+
+    public long getUnixBidStart() {
+        return unixBidStart;
+    }
+
+    public void setUnixBidStart(long unixBidStart) {
+        this.unixBidStart = unixBidStart;
+    }
+
+    public long getUnixBidEnd() {
+        return unixBidEnd;
+    }
+
+    public void setUnixBidEnd(long unixBidEnd) {
+        this.unixBidEnd = unixBidEnd;
+    }
 }
