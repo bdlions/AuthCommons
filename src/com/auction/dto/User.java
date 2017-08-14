@@ -16,6 +16,9 @@ public class User extends ClientResponse implements java.io.Serializable{
     private String lastName;
     private String email;
     private String img;
+    private String agentLogo;
+    private String businessName;
+    private String address;
     private String document;
     private String cellNo;
     private boolean isVerified;
@@ -172,6 +175,30 @@ public class User extends ClientResponse implements java.io.Serializable{
 
     public void setRoleList(List<Role> roleList) {
         this.roleList = roleList;
+    }
+
+    public String getAgentLogo() {
+        return agentLogo;
+    }
+
+    public void setAgentLogo(String agentLogo) {
+        this.agentLogo = agentLogo;
+    }
+
+    public String getBusinessName() {
+        return businessName;
+    }
+
+    public void setBusinessName(String businessName) {
+        this.businessName = businessName;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
     
 }
