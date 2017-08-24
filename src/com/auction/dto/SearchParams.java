@@ -14,6 +14,7 @@ public class SearchParams {
     private Duration duration;
     private double minPrice;
     private double maxPrice;
+    private Availability availability;
     public SearchParams()
     {
         productType = new ProductType();
@@ -22,6 +23,7 @@ public class SearchParams {
         occupation = new Occupation();
         pet = new Pet();
         duration = new Duration();
+        availability = new Availability();
     }
 
     public String getReferenceId() {
@@ -94,6 +96,14 @@ public class SearchParams {
 
     public void setMaxPrice(double maxPrice) {
         this.maxPrice = maxPrice;
+    }
+
+    public Availability getAvailability() {
+        return availability;
+    }
+
+    public void setAvailability(Availability availability) {
+        this.availability = availability;
     }
     
 }

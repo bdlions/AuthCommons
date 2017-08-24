@@ -24,4 +24,9 @@ public class ProductSize {
         this.title = title;
     }
     
+    //to display object as a string in spinner
+    @Override
+    public String toString() {
+        return title;
+    }
 }
