@@ -7,7 +7,7 @@ package org.bdlions.util.annotation;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
-import com.auction.util.ACTION;
+import com.bdlions.util.ACTION;
 
 /**
  *
